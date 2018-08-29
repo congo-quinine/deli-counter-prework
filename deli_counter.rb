@@ -26,7 +26,7 @@
     if katz_deli.size == 0
     katz_deli.push(name)
     place_in_line = katz_deli.size
-    puts "Welcome, #{name}. You are number #{place_in_line + 1} in line."
+    puts "Welcome, #{name}. You are number #{place_in_line } in line."
   elsif katz_deli.size > 0
     katz_deli.unshift(name)
     place_in_line = katz_deli.size
