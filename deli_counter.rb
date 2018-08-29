@@ -7,17 +7,16 @@
 # Build the now_serving method which should call out (i.e. puts) the next person in line and then remove them from the front. If there is nobody in line, it should call out (puts) that "There is nobody waiting to be served!".
 #
 
-
-    def line(katz_deli)
-      if katz_deli.size == 0
-        puts "The line is currently empty."
-      elsif katz_deli.size > 0
-      counter = 1
-          in_line = "The line is currently:"
-            katz_deli.each do |i|
-                   in_line += " #{counter}. #{i}"
-                counter += 1
-              end
+def line(katz_deli)
+  if katz_deli.size > 0
+    counter = 1
+        in_line = "The line is currently:"
+          katz_deli.each do |i|
+                 in_line += " #{counter}. #{i}"
+              counter += 1
             end
-      puts in_line
-    end
+  else
+    puts "The line is currently empty."
+  end
+  puts in_line
+end
