@@ -8,7 +8,7 @@
 
 
   def line(katz_deli)
-    if katz_deli.length <= 0
+    if katz_deli.length == 0
       puts "The line is currently empty."
     end
       counter = 1
@@ -26,7 +26,7 @@
     if katz_deli.size == 0
     katz_deli[0] = name
     place_in_line = katz_deli.size
-    puts "Welcome, #{name}. You are number #{place_in_line } in line."
+    puts "Welcome, #{name}. You are number #{place_in_line} in line."
   elsif katz_deli.size > 0
     katz_deli.push(name)
     place_in_line = katz_deli.size
