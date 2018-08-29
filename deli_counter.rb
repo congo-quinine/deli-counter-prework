@@ -32,4 +32,4 @@
     place_in_line = katz_deli.size
     puts "Welcome, #{name}. You are number #{place_in_line + 1} in line."
   end
-  end  
+  end
