@@ -24,7 +24,7 @@
 
   def take_a_number(katz_deli, name)
     if katz_deli.size == 0
-    katz_deli.push(name)
+    katz_deli[0] = name
     place_in_line = katz_deli.size
     puts "Welcome, #{name}. You are number #{place_in_line } in line."
   elsif katz_deli.size > 0
