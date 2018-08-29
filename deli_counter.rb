@@ -37,7 +37,7 @@
 
   def now_serving(katz_deli)
     if katz_deli.size == 0
-      puts "The line is empty"
+      puts "There is nobody waiting to be served!"
         else
           puts "Now serving #{katz_deli[0]}"
             katz_deli.shift
