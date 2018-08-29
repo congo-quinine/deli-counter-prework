@@ -12,13 +12,14 @@ katz_deli = []
 def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
-  else
+  end
+
     counter = 1
         in_line = "The line is currently:"
           katz_deli.each do |i|
                  in_line += " #{counter}. #{i}"
               counter += 1
             end
-  end
+
   puts in_line
 end
