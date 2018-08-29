@@ -3,8 +3,6 @@
 # Build the line method that shows everyone their current place in the line. If there is nobody in line, it should say "The line is currently empty.".
 #
 #
-# Build the now_serving method which should call out (i.e. puts) the next person in line and then remove them from the front. If there is nobody in line, it should call out (puts) that "There is nobody waiting to be served!".
-#
 
 
   def line(katz_deli)
@@ -25,12 +23,23 @@
 
   def take_a_number(katz_deli, name)
     if katz_deli.size == 0
-    katz_deli[0] = name
-    place_in_line = katz_deli.size
-    puts "Welcome, #{name}. You are number #{place_in_line} in line."
-  elsif katz_deli.size > 0
-    katz_deli.push(name)
-    place_in_line = katz_deli.size
-    puts "Welcome, #{name}. You are number #{place_in_line} in line."
+      katz_deli[0] = name
+        place_in_line = katz_deli.size
+          puts "Welcome, #{name}. You are number #{place_in_line} in line."
+        elsif katz_deli.size > 0
+          katz_deli.push(name)
+            place_in_line = katz_deli.size
+              puts "Welcome, #{name}. You are number #{place_in_line} in line."
+    end
   end
-  end
+
+# Build the now_serving method which should call out (i.e. puts) the next person in line and then remove them from the front. If there is nobody in line, it should call out (puts) that "There is nobody waiting to be served!".
+
+  def now_serving(katz_deli)
+    if katz_deli.size == 0
+      puts "The line is empty" 
+        else
+          puts "Now serving #{katz_deli[0]}"
+            katz_deli.shift
+    end  
+  end  
