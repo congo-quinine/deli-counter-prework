@@ -15,7 +15,7 @@ def line(katz_deli)
                  in_line += " #{counter}. #{i}"
               counter += 1
             end
-  else
+  elsif katz_deli == 0
     puts "The line is currently empty."
   end
   puts in_line
